@@ -1,0 +1,60 @@
+import { StyleSheet } from "react-native";
+import { colors } from "../../theme/colors";
+
+export default StyleSheet.create({
+  safe: { flex: 1, backgroundColor: colors.background },
+  content: { padding: 20, paddingBottom: 30 },
+  eyebrow: {
+    color: colors.primary,
+    fontSize: 11,
+    fontWeight: "900",
+    letterSpacing: 1.2,
+  },
+  title: {
+    color: colors.textPrimary,
+    fontSize: 27,
+    fontWeight: "900",
+    marginTop: 4,
+  },
+  search: {
+    minHeight: 50,
+    backgroundColor: colors.surface,
+    color: colors.textPrimary,
+    borderWidth: 1,
+    borderColor: colors.cardBorder,
+    borderRadius: 11,
+    paddingHorizontal: 14,
+    marginTop: 18,
+  },
+  chips: { paddingVertical: 14, gap: 8 },
+  chip: {
+    borderWidth: 1,
+    borderColor: colors.cardBorder,
+    borderRadius: 18,
+    paddingHorizontal: 13,
+    paddingVertical: 8,
+  },
+  chipActive: { backgroundColor: colors.primary, borderColor: colors.primary },
+  chipText: { color: colors.textSecondary, fontSize: 12, fontWeight: "800" },
+  chipTextActive: { color: colors.white },
+  banner: {
+    backgroundColor: `${colors.primary}22`,
+    borderWidth: 1,
+    borderColor: `${colors.primary}55`,
+    borderRadius: 13,
+    padding: 15,
+    marginBottom: 20,
+  },
+  bannerTitle: { color: colors.textPrimary, fontSize: 14, fontWeight: "900" },
+  bannerText: {
+    color: colors.textSecondary,
+    fontSize: 12,
+    lineHeight: 18,
+    marginTop: 5,
+  },
+  bannerLink: { color: colors.primary, fontWeight: "800", marginTop: 8 },
+  result: { color: colors.textSecondary, fontSize: 12, marginBottom: 12 },
+  error: { color: colors.danger, fontSize: 12, marginBottom: 12 },
+  empty: { paddingTop: 50, alignItems: "center" },
+  emptyText: { color: colors.textSecondary, textAlign: "center" },
+});

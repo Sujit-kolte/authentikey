@@ -1,0 +1,61 @@
+import { StyleSheet } from "react-native";
+import { colors } from "../theme/colors";
+
+export default StyleSheet.create({
+  container: {
+    height: 230,
+    borderRadius: 15,
+    overflow: "hidden",
+    backgroundColor: colors.input,
+  },
+  image: { width: "100%", height: "100%" },
+  scrim: { ...StyleSheet.absoluteFillObject, backgroundColor: "#00000045" },
+  badge: {
+    position: "absolute",
+    top: 14,
+    left: 14,
+    backgroundColor: "#052e16dd",
+    borderRadius: 18,
+    paddingHorizontal: 11,
+    paddingVertical: 7,
+  },
+  badgeText: { color: colors.safe, fontSize: 11, fontWeight: "900" },
+  playButton: {
+    position: "absolute",
+    alignSelf: "center",
+    top: 80,
+    width: 66,
+    height: 66,
+    borderRadius: 33,
+    backgroundColor: `${colors.white}e8`,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  footer: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    padding: 14,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  footerText: { color: colors.white, fontSize: 13, fontWeight: "800" },
+  duration: {
+    color: colors.white,
+    fontSize: 12,
+    fontWeight: "800",
+    backgroundColor: "#00000088",
+    borderRadius: 5,
+    paddingHorizontal: 7,
+    paddingVertical: 4,
+  },
+  fallback: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 20,
+  },
+  fallbackText: { color: colors.textSecondary, textAlign: "center" },
+});

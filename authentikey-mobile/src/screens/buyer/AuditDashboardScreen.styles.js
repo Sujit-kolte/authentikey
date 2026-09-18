@@ -1,0 +1,75 @@
+import { StyleSheet } from "react-native";
+import { colors } from "../../theme/colors";
+
+export default StyleSheet.create({
+  safe: { flex: 1, backgroundColor: colors.background },
+  scroll: { padding: 20, paddingBottom: 36 },
+  header: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 24,
+  },
+  eyebrow: {
+    color: colors.primary,
+    fontSize: 11,
+    fontWeight: "900",
+    letterSpacing: 1.4,
+  },
+  title: {
+    color: colors.textPrimary,
+    fontSize: 26,
+    fontWeight: "900",
+    marginTop: 4,
+  },
+  iconButton: {
+    backgroundColor: colors.surface,
+    padding: 10,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: colors.cardBorder,
+  },
+  intro: { color: colors.textSecondary, lineHeight: 20, marginBottom: 16 },
+  input: {
+    minHeight: 120,
+    backgroundColor: colors.surface,
+    color: colors.textPrimary,
+    borderWidth: 1,
+    borderColor: colors.cardBorder,
+    borderRadius: 12,
+    padding: 14,
+    textAlignVertical: "top",
+    fontSize: 14,
+    marginBottom: 12,
+  },
+  section: {
+    color: colors.textPrimary,
+    fontSize: 17,
+    fontWeight: "800",
+    marginTop: 24,
+    marginBottom: 12,
+  },
+  empty: {
+    borderWidth: 1,
+    borderStyle: "dashed",
+    borderColor: colors.cardBorder,
+    padding: 20,
+    borderRadius: 12,
+  },
+  emptyText: {
+    color: colors.textSecondary,
+    textAlign: "center",
+    lineHeight: 20,
+  },
+  escrow: {
+    backgroundColor: colors.safe,
+    marginTop: 18,
+    borderRadius: 12,
+    padding: 16,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+  },
+  escrowTitle: { color: "#052e16", fontSize: 15, fontWeight: "900" },
+  escrowText: { color: "#166534", fontSize: 12, marginTop: 3 },
+});
